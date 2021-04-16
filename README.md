@@ -1,7 +1,9 @@
-Charmed TensorFlow Operator
-===========================
+TFJob Operator
+==============
 
-This charm is part of the Kubeflow bundle. For instructions on how to deploy it,
-see https://jaas.ai/kubeflow.
+### Overview
+This repository hosts the Kubernetes Python Operator for TFJob Operator
+(see [CharmHub](https://charmhub.io/?q=tfjob-operator)).
 
-Upstream documentation can be found at https://www.kubeflow.org/docs/components/training/tftraining/
+The TFJob Operator is a Python script that wraps the latest released TFJob Operator manifest,
+providing lifecycle management and handling events (install, upgrade, integrate, remove).
