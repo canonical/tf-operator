@@ -1,1 +1,5 @@
-options: {}
+options:
+  monitoring-port:
+    type: string
+    default: '8443'
+    description: Prometheus monitoring port

@@ -1,9 +1,11 @@
-name: tf-job-operator
+name: tfjob-operator
 display-name: TensorFlow Job Operator
-summary: TensorFlow Job Operator
+summary: Tools for ML/TensorFlow on Kubernetes 
 description: |
-  This charm deploys the Job Operator configured for use with Kubeflow to
-  Kubernetes models in Juju.
+  TFJob provides a Kubernetes custom resource that makes
+  it easy to run distributed or non-distributed TensorFlow
+  jobs on Kubernetes. This charm deploys the Job Operator
+  configured for use with Kubeflow to Kubernetes models in Juju.
 maintainers: [Juju Developers <juju@lists.ubuntu.com>]
 tags: [ai, bigdata, kubeflow, machine-learning, tensorflow]
 series: [kubernetes]
@@ -12,7 +14,7 @@ resources:
     type: oci-image
     description: 'Backing OCI image'
     auto-fetch: true
-    upstream-source: gcr.io/kubeflow-images-public/tf_operator:v1.1.0-g92389064
+    upstream-source: public.ecr.aws/j1r0q0g6/training/tf-operator:cd2fc1ff397b1f349f68524f4abd5013a32e3033
 deployment:
   type: stateless
   service: omit
